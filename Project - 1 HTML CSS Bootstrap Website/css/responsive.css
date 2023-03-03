@@ -1,4 +1,9 @@
 @media only screen and (max-width: 992px) {
+    body {
+        background-size: auto;
+    }
+
+
     .nav-item {
         text-align: center;
         margin: 18px 0;
@@ -19,6 +24,8 @@
 }
 
 @media (max-width: 768px) {
+
+
     .menu-link-group a {
         font-size: 16px;
         padding: 14px 0;
@@ -35,6 +42,16 @@
 
 
 @media (max-width: 576px) {
+    /* header start */
+
+    .navbar-brand {
+        font-size: 15px;
+    }
+
+    .navbar-brand img {
+        width: 40px;
+    }
+
     .banner-slider {
         display: none;
     }
@@ -44,4 +61,16 @@
         width: 80vw;
         height: 30px;
     }
+
+    .our-products-section {
+        margin: 1rem 0 !important;
+    }
+
+    /* header end */
+    /* common heading start */
+    .common-heading {
+        font-size: 16px;
+    }
+
+    /* common heading end */
 }

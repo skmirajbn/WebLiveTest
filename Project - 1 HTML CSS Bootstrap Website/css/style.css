@@ -140,8 +140,14 @@ body {
 
 .card {
     border-radius: 0;
+    border: 2px solid #ffffff;
+}
+
+.card:hover {
     border: 2px solid #fa8729;
 }
+
+
 
 .card-title {
     color: black;
@@ -154,6 +160,7 @@ body {
     width: 70%;
     margin: 30px auto;
 }
+
 
 .card-body {
     padding: 0;
