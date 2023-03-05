@@ -1,0 +1,47 @@
+/* product banner start */
+.product-banner {
+    display: flex;
+    align-items: end;
+    height: 120px;
+    background-image: url(../images/product-page-banner.jpg);
+    background-size: cover;
+}
+
+.product-banner h3 {
+    font-size: 12px;
+}
+
+/* product banner end */
+
+/* Product body start */
+.product-body {
+    color: black;
+    background-color: white;
+    padding: 20px;
+}
+
+.img-cont {
+    border: 1px rgb(224, 224, 224) solid;
+}
+
+.product-body a {
+    margin-top: 25px;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f5893f;
+    text-decoration: none;
+}
+
+.img-grp {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.img-grp img {
+    padding: 10px;
+    display: inline-block;
+    width: 25%;
+}
+
+/* Product body end */

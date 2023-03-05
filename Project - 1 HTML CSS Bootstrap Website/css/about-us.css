@@ -1,0 +1,41 @@
+.about-us {}
+
+.about-body {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.568);
+    padding: 30px;
+}
+
+.about-body h2 {
+    font-weight: bold;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.about-body p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.img-cont {
+
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    flex-direction: column;
+
+}
+
+.img-cont img {}
+
+
+@media only screen and (max-width: 992px) {
+    .img-cont div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}

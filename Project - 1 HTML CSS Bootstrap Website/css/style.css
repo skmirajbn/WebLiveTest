@@ -21,6 +21,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Nexa-book';
+    src: url('../fonts/Nexa-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Importing fonts end */
 
 
@@ -39,15 +46,9 @@ body {
     position: relative;
 }
 
-/* body::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, transparent #fff);
-} */
+/* Common CSS start */
+
+/* Common CSS end */
 
 /* Header start */
 .navbar-toggler-icon-custom {
@@ -63,6 +64,11 @@ body {
     color: #f5893f;
 }
 
+.navbar-brand:focus,
+.navbar-brand:hover {
+    color: white;
+}
+
 .nav-item span {
     color: #fa8729;
 }
@@ -71,6 +77,7 @@ body {
     font-size: 14px;
     color: white;
 }
+
 
 .nav-link {
     color: white;
@@ -81,6 +88,10 @@ body {
 .nav-link:hover,
 .navbar-nav .nav-link.active {
     color: #fa8729;
+}
+
+.navbar-nav {
+    --bs-nav-link-hover-color: #fa8729;
 }
 
 .navbar-nav li {
@@ -106,6 +117,10 @@ body {
     font-size: 15px;
 }
 
+.menu-link-group a:hover {
+    color: #fa8729;
+}
+
 .menu-link-group input {
     padding: 0 5px;
     height: 20px;
@@ -113,6 +128,10 @@ body {
     font-size: 12px;
     border: none;
     background-color: transparent;
+}
+
+.fa-magnifying-glass {
+    vertical-align: middle;
 }
 
 /* Header end */
@@ -133,6 +152,7 @@ body {
     background-color: #df4e00;
 }
 
+
 /* Carosol End */
 
 /* Our Products start */
@@ -141,6 +161,7 @@ body {
 .card {
     border-radius: 0;
     border: 2px solid #ffffff;
+    transition: .25s;
 }
 
 .card:hover {
@@ -148,18 +169,27 @@ body {
 }
 
 
-
 .card-title {
     color: black;
     margin-bottom: 10px;
 }
 
+.img-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 40px auto;
+    height: 200px;
+    width: 200px;
+    padding: 0 10px;
+}
+
+.img-container img {
+    vertical-align: middle;
+}
 
 .card-img,
-.card-img-top {
-    width: 70%;
-    margin: 30px auto;
-}
+.card-img-top {}
 
 
 .card-body {
@@ -180,12 +210,19 @@ body {
 }
 
 .card-btn {
+    border-radius: 0;
     display: block;
     color: #fa8729;
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
+    transition: .3s;
+}
+
+.card:hover .card-btn {
+    background-color: #fa8729;
+    color: white;
 }
 
 .card-btn::before {
@@ -200,6 +237,111 @@ body {
 }
 
 /* Our Products end */
+/* Service start */
+
+.service-container {
+    position: relative;
+
+}
+
+.service-container-item {
+    margin-top: 12px;
+    position: absolute;
+
+}
+
+.service-container-item img {
+    display: block;
+    /* padding: 10px 0; */
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.service-container-item h2 {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #4d200d;
+}
+
+/* Service end */
+
+/* Footer-top start */
+.footer-top {
+    padding: 45px 30px;
+    background-color: rgba(0, 0, 0, 0.66);
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.ft-sec {
+    margin: 0 10px;
+}
+
+.ft-sec h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+.ft-sec .ft-link-grp {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ft-link-grp a {
+    display: inline-block;
+    padding: 4px;
+    text-decoration: none;
+    color: #d3d3d3;
+    font-family: Nexa-book;
+    font-size: 12px;
+}
+
+.link-grp-social {
+    margin-top: 20px;
+}
+
+.link-grp-social a {
+    text-decoration: none;
+    color: #d3d3d3;
+    padding-right: 15px;
+}
+
+/* Footer-top end */
+
+/* Footer start */
+footer {
+    background-color: #f5893f;
+    padding: 20px 30px;
+}
+
+address {
+    font-family: Nexa-book;
+    margin: 0;
+    font-size: 12px;
+    color: #241007;
+}
+
+/* Footer end */
+
+
+/* Faceook fixed start */
+.facebook-fixed {
+    top: 25vh;
+    right: 0;
+    position: fixed;
+    background-color: #af4c18;
+    padding: 20px 8px;
+}
+
+/* Faceook fixed end */
+
 
 
 /* common heading start */
